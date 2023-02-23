@@ -4,15 +4,6 @@ import Illustration from "./assets/images/illustration_weather.svg";
 import * as Styles from "./styles";
 import { CiTempHigh } from "react-icons/ci";
 import { WiHumidity, WiDaySunny, WiStrongWind } from "react-icons/wi";
-import {
-  CartesianGrid,
-  Line,
-  LineChart,
-  XAxis,
-  YAxis,
-  Tooltip,
-  ResponsiveContainer,
-} from "recharts";
 import axios from "axios";
 import { Weather } from "./types/weather";
 
@@ -118,22 +109,6 @@ function App() {
                   </Styles.OverviewItem>
                 </div>
               </Styles.OverviewSection>
-              {/* <ResponsiveContainer width="100%" height="50%">
-                <LineChart
-                  data={data?.forecast.forecastday}
-                  margin={{ left: 0, top: 20 }}
-                >
-                  <Line
-                    type="monotone"
-                    dataKey={data?.forecast.forecastday.day.maxtemp_c}
-                    stroke="#6c5ce7"
-                  />
-                  <CartesianGrid stroke="#fafafa" strokeDasharray="5 5" />
-                  <XAxis dataKey="day" />
-                  <YAxis />
-                  <Tooltip />
-                </LineChart>
-              </ResponsiveContainer> */}
             </>
           )}
         </Styles.InfoSection>
