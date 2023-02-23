@@ -10,7 +10,7 @@ export const Container = styled.div`
 
 export const Content = styled.main`
   display: flex;
-  max-width: 1350px;
+  min-width: 1350px;
   height: 600px;
 
   @media (max-width: 1350px) {
@@ -38,10 +38,12 @@ export const InfoSection = styled.section`
   height: 100%;
   width: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #485460;
   border-radius: 10px;
+  padding: 1rem 2rem;
 
   @media (max-width: 1000px) {
     width: 100%;
@@ -51,6 +53,60 @@ export const InfoSection = styled.section`
 
 export const IllustrationImage = styled.img`
   width: 70%;
+`;
+
+export const HeaderInfoSection = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
+  width: 100%;
+`;
+
+export const OverviewSection = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 55%;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const OverviewItem = styled.div`
+  width: 45%;
+  height: 100px;
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #b2bec3;
+
+  & > div {
+    display: flex;
+    align-items: center;
+  }
+`;
+
+export const TitleOverviewItem = styled.h2`
+  margin-left: 0.4rem;
+  color: #636e72;
+  font-size: 1rem;
+`;
+
+export const ValueOverviewItem = styled.p`
+  font-size: 1.5rem;
+  font-weight: bold;
+`;
+
+export const ChartSection = styled.div`
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
 `;
 
 export const SearchSection = styled.section`
