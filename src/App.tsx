@@ -75,44 +75,48 @@ function App() {
                 </p>
               </Styles.HeaderInfoSection>
               <Styles.OverviewSection>
-                <Styles.OverviewItem>
-                  <div>
-                    <CiTempHigh size={30} />
-                    <Styles.TitleOverviewItem>
-                      Temperatura
-                    </Styles.TitleOverviewItem>
-                  </div>
-                  <Styles.ValueOverviewItem>
-                    {data.current.temp_c}°
-                  </Styles.ValueOverviewItem>
-                </Styles.OverviewItem>
-                <Styles.OverviewItem>
-                  <div>
-                    <WiHumidity size={30} />
-                    <Styles.TitleOverviewItem>Umidade</Styles.TitleOverviewItem>
-                  </div>
-                  <Styles.ValueOverviewItem>
-                    {data.current.humidity}%
-                  </Styles.ValueOverviewItem>
-                </Styles.OverviewItem>
-                <Styles.OverviewItem>
-                  <div>
-                    <WiStrongWind size={30} />
-                    <Styles.TitleOverviewItem>Vento</Styles.TitleOverviewItem>
-                  </div>
-                  <Styles.ValueOverviewItem>
-                    {data.current.wind_kph} Km/h
-                  </Styles.ValueOverviewItem>
-                </Styles.OverviewItem>
-                <Styles.OverviewItem>
-                  <div>
-                    <WiDaySunny size={30} />
-                    <Styles.TitleOverviewItem>UV</Styles.TitleOverviewItem>
-                  </div>
-                  <Styles.ValueOverviewItem>
-                    {data.current.uv}
-                  </Styles.ValueOverviewItem>
-                </Styles.OverviewItem>
+                <div>
+                  <Styles.OverviewItem>
+                    <div>
+                      <CiTempHigh size={30} />
+                      <Styles.TitleOverviewItem>
+                        Temperatura
+                      </Styles.TitleOverviewItem>
+                    </div>
+                    <Styles.ValueOverviewItem>
+                      {data.current.temp_c}°
+                    </Styles.ValueOverviewItem>
+                  </Styles.OverviewItem>
+                  <Styles.OverviewItem>
+                    <div>
+                      <WiHumidity size={30} />
+                      <Styles.TitleOverviewItem>
+                        Umidade
+                      </Styles.TitleOverviewItem>
+                    </div>
+                    <Styles.ValueOverviewItem>
+                      {data.current.humidity}%
+                    </Styles.ValueOverviewItem>
+                  </Styles.OverviewItem>
+                  <Styles.OverviewItem>
+                    <div>
+                      <WiStrongWind size={30} />
+                      <Styles.TitleOverviewItem>Vento</Styles.TitleOverviewItem>
+                    </div>
+                    <Styles.ValueOverviewItem>
+                      {data.current.wind_kph} Km/h
+                    </Styles.ValueOverviewItem>
+                  </Styles.OverviewItem>
+                  <Styles.OverviewItem>
+                    <div>
+                      <WiDaySunny size={30} />
+                      <Styles.TitleOverviewItem>UV</Styles.TitleOverviewItem>
+                    </div>
+                    <Styles.ValueOverviewItem>
+                      {data.current.uv}
+                    </Styles.ValueOverviewItem>
+                  </Styles.OverviewItem>
+                </div>
               </Styles.OverviewSection>
               {/* <ResponsiveContainer width="100%" height="50%">
                 <LineChart

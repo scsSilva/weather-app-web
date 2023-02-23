@@ -10,11 +10,11 @@ export const Container = styled.div`
 
 export const Content = styled.main`
   display: flex;
-  min-width: 1350px;
+  width: 1350px;
   height: 600px;
 
-  @media (max-width: 1350px) {
-    width: 1000px;
+  @media (max-width: 1380px) {
+    width: 1100px;
   }
 
   @media (max-width: 1000px) {
@@ -48,6 +48,8 @@ export const InfoSection = styled.section`
   @media (max-width: 1000px) {
     width: 100%;
     height: 50%;
+
+    padding: 1rem;
   }
 `;
 
@@ -59,18 +61,30 @@ export const HeaderInfoSection = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10%;
+  height: 20%;
   width: 100%;
 `;
 
 export const OverviewSection = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 55%;
-  gap: 10px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+
+  & > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.3rem;
+  }
+
+  @media (max-width: 570px) {
+    & > div {
+      gap: 0.8rem;
+    }
+  }
 `;
 
 export const OverviewItem = styled.div`
@@ -87,17 +101,29 @@ export const OverviewItem = styled.div`
     display: flex;
     align-items: center;
   }
+
+  @media (max-width: 570px) {
+    flex-direction: column;
+  }
 `;
 
 export const TitleOverviewItem = styled.h2`
   margin-left: 0.4rem;
   color: #636e72;
   font-size: 1rem;
+
+  @media (max-width: 570px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const ValueOverviewItem = styled.p`
   font-size: 1.5rem;
   font-weight: bold;
+
+  @media (max-width: 570px) {
+    font-size: 1.2rem;
+  }
 `;
 
 export const ChartSection = styled.div`
@@ -153,7 +179,7 @@ export const Form = styled.form`
   width: 100%;
   gap: 1rem;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1380px) {
     flex-direction: column;
   }
 `;
@@ -175,7 +201,7 @@ export const InputSearch = styled.input`
     color: #ccc;
   }
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1380px) {
     width: 70%;
   }
 
@@ -203,7 +229,7 @@ export const BtnSearch = styled.button`
     background-color: #564ede;
   }
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1380px) {
     width: 70%;
   }
 
