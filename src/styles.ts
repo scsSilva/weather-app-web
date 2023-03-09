@@ -55,6 +55,7 @@ export const InfoSection = styled.section`
 
 export const IllustrationImage = styled.img`
   width: 70%;
+  height: 70%;
 `;
 
 export const HeaderInfoSection = styled.header`
@@ -152,6 +153,7 @@ export const SearchSection = styled.section`
 `;
 
 export const IconImage = styled.img`
+  width: 20%;
   height: 20%;
 `;
 
