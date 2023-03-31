@@ -54,8 +54,8 @@ export const InfoSection = styled.section`
 `;
 
 export const IllustrationImage = styled.img`
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: 50%;
 `;
 
 export const HeaderInfoSection = styled.header`
